@@ -1,0 +1,28 @@
+@import '../../../styles/abstracts/variables';
+
+.header-icon {
+    width: 100%;
+    background: #E8F0F6;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    padding: 0 3rem;
+    height: calc(100vh - 20vh);
+    min-height: 40em;
+    display: flex;
+    align-items: flex-end;
+
+    img {
+        width: 100%;
+        height: auto;
+        user-select: none;
+        -moz-user-select: none;
+    }
+}
+
+.header-partners-icon {
+    height: 20vh;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}

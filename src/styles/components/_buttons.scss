@@ -1,0 +1,107 @@
+
+//Button WITH box-shadow
+.btn-sw {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .400rem .80rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    box-shadow: 6px 6px 0px transparent;
+    border-radius: 10px 0px;
+    transition: .5s ease-in-out;
+
+    &:hover,
+    &:after,
+    &:focus {
+        text-decoration: none;
+        box-shadow: none;
+    }
+}
+
+.btn-sw-primary {
+    color: $main-white;
+    background-color: $light-blue;
+    box-shadow: 6px 6px 0px $light-grey;
+
+    &:hover,
+    &:after,
+    &:focus {
+        background-color: $main-blue;
+    }
+}
+
+.btn-sw-secondary {
+    color: $light-blue;
+    background-color: $main-white;
+    border: 1px solid $lighter-blue;
+    box-shadow: 6px 6px 0px $lightest-blue;
+
+    &:hover,
+    &:after,
+    &:focus {
+        background-color: $lighter-grey;
+    }
+}
+
+.btn-sw-width {
+    padding: 0.800rem 0.80rem;
+    font-size: 1.5rem;
+}
+
+
+//Button WITHOUT box-shadow
+.btn-nsw {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .400rem .80rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    border-radius: 10px 0px;
+    transition: .5s ease-in-out;
+
+    &:hover,
+    &:after,
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+.btn-nsw-primary {
+    color: $main-white;
+    background-color: $light-blue;
+
+    &:hover,
+    &:after,
+    &:focus {
+        background-color: $main-blue;
+    }
+}
+
+.btn-nsw-secondary {
+    color: $light-blue;
+    background-color: $main-white;
+    border: 1px solid $lighter-blue;
+
+    &:hover,
+    &:after,
+    &:focus {
+        background-color: $lighter-grey;
+    }
+}
+
+.btn-nsw-width {
+    padding: 0.775rem 0.80rem;
+    font-size: 1.5rem;
+}

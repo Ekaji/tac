@@ -1,0 +1,89 @@
+@import '../../../styles/abstracts/variables';
+
+.navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link.active {
+    color: goldenrod;
+
+    &::before {
+
+        transform: scale(1);
+    }
+}
+
+.navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link {
+    
+    position: relative;
+
+    &::before {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -10px;
+        height: .15em;
+        background: goldenrod;
+        content: "";
+        z-index: 1;
+        transition: all 450ms ease;
+        transform: scale(0);
+        border-radius: 30px;
+    }
+
+    &:hover {
+        &::before {
+            transform: scale(1);
+
+        }
+    }
+
+
+}
+
+.icon-bar {
+    border: none;
+    background: $light-blue;
+    height: 3px;
+    width: 20px;
+    border-radius: 1px;
+    cursor: pointer;
+    display: block;
+    margin: 5px;
+    transition: all 0.2s ease-out;
+    border-radius: 15px;
+}
+
+.top-bar {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.middle-bar {
+    opacity: 0;
+}
+
+.bottom-bar {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.nav-link {
+    outline: none;
+
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: .2rem !important;
+    margin: 0 2.8rem;
+    font-size: 1.2rem;
+    color: $light-blue;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: transparent !important;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}

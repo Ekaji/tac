@@ -1,0 +1,36 @@
+<nav style="padding-left: 2.2rem; padding-right: 2.2rem;"
+    class="navbar navbar-expand-lg navbar-light bg-applight fixed-top">
+    <a class="navbar-brand" [routerLink]="['/']"><img class="logo-img" src="../../../assets/tac-logo.png" height="100"
+            alt="logo" srcset=""></a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="icon-bar" style="width: 30px;" #top></span>
+        <span class="icon-bar" #middle></span>
+        <span class="icon-bar" style="width: 30px;" #bottom></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+
+
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/']">Home</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/']">About</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/']">Labs</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/']">Contact</a>
+            </li>
+        </ul>
+        <a href=""><button class="btn-nsw btn-nsw-secondary my-2 my-sm-0" type="submit">Donate</button></a>
+    </div>
+
+</nav>

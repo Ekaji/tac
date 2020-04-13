@@ -1,0 +1,39 @@
+.top-container {
+    height: 100vh;
+    min-height: 45em;
+}
+
+.container-pd {
+    padding: 0 1.2rem;
+}
+
+
+//Header Top details that contains the site intro
+.tac-header-detail {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+
+    &__items {
+        h2 {
+            font-size: 3em;
+            line-height: 1.27em;
+            max-width: 10em;
+            color: #17466C;
+        }
+
+        p {
+            font-size: 1.125em;
+            line-height: 1.5em;
+            color: rgba(23, 70, 108, 0.85);
+            margin-top: 1em;
+            max-width: 21em;
+        }
+
+        button {
+            margin-top: 2em;
+            margin-bottom: 2em;
+
+        }
+    }
+}
