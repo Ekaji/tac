@@ -1,10 +1,14 @@
-<nav style="padding-left: 2.2rem; padding-right: 2.2rem;"
+<nav style="padding-left: 2.2rem; padding-right: 2.2rem; transition: .7s all;"
+ [style.box-shadow]="isShow ? '0 2px 2px rgba(0, 0, 0, 0.17)' : 'none'"
+[style.background]="isShow ? '#ffff' : 'transparent'"
     class="navbar navbar-expand-lg navbar-light bg-applight fixed-top">
-    <a class="navbar-brand" [routerLink]="['/']"><img class="logo-img" src="../../../assets/tac-logo.png" height="100"
+    <a class="navbar-brand" [routerLink]="['/']"><img style="transition: .7s all;" class="logo-img"
+            [style.height]="isShow ? '60px' : '100px'" src="../../../assets/tac-logo.png" 
             alt="logo" srcset=""></a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+        (click)="onClickMe()">
         <span class="icon-bar" style="width: 30px;" #top></span>
         <span class="icon-bar" #middle></span>
         <span class="icon-bar" style="width: 30px;" #bottom></span>

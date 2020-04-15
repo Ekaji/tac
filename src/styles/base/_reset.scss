@@ -471,7 +471,7 @@ textarea {
     padding: 0.2em 0;
 }
 
-* ,::before, ::after {
+* ,*::before, *::after {
     box-sizing: border-box;
 }
 
@@ -481,7 +481,7 @@ em {
     background: transparent;
     font-style: normal;
     z-index: 0;
-    
+
     &::before {
             position: absolute;
             bottom: 5px;

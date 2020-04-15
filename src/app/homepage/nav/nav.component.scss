@@ -16,7 +16,7 @@
 .navbar-light .navbar-nav .active>.nav-link,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link {
-    
+
     position: relative;
 
     &::before {
@@ -86,4 +86,29 @@
 
 .navbar-expand-lg .navbar-collapse {
     justify-content: flex-end;
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        opacity: 1;
+        transform: translateX(0px);
+        height: 50vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    .navbar-collapse.collapse.show {
+        background: #ffffff;
+
+
+        a {
+            text-decoration: none;
+        }
+
+        button {
+            margin: 0 auto;
+        }
+    }
 }

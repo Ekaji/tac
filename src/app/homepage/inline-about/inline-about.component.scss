@@ -1,0 +1,47 @@
+@import '../../../styles/abstracts/variables';
+
+.inline-about {
+    background: $main-grey;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.about-details {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    max-width: 35em;
+
+    h2 {
+        margin-top: 2rem;
+    }
+
+    &__p {
+        margin-top: 1rem;
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.5;
+            color: $lightest-blue;
+            margin-top: 1rem;
+        }
+    }
+
+    button {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+}
+
+.about-vids {
+    background: url(../../../assets/drone-video.jpg);
+    background-position: 10% 50%;
+    background-position-x: 10%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50em;
+}

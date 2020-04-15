@@ -1,0 +1,58 @@
+@import '../../../styles/abstracts/variables';
+
+.inline-newsletter {
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    &__details {
+        p {
+            color: $lightest-blue;
+            max-width: 25em;
+            font-size: 1.2em;
+            line-height: 1.2;
+            margin-top: 1em;
+        }
+    }
+
+    form {
+        margin-top: 2em;
+
+        label {
+            color: $lightest-blue;
+            transform: translate(20px, 12px);
+            background: $main-blue;
+            padding: .3em;
+            border-radius: .2em;
+            color: $main-white;
+            font-size: .9em;
+        }
+
+        input {
+            border-radius: .3em;
+            padding: 1rem 1.5rem;
+            font-size: 1.2em;
+            color: $light-blue;
+            outline: 0;
+            border: 0.2rem solid $light-grey;
+            max-width: 27rem;
+            width: 100%;
+
+            &:focus {
+                border-color:$lightest-blue;
+            }
+        }
+
+        button {
+            margin-top: .5em;
+        }
+    }
+}
+
+section {
+    width: 100%;
+    overflow-x: hidden;
+}
