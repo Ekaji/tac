@@ -1,0 +1,39 @@
+@import '../../../styles/abstracts/variables';
+
+.tac-subpagetitle {
+    margin-top: 15em;
+    margin-bottom: 8em;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 600;
+    color: $light-blue;
+
+
+    &:after {
+        content: '';
+        background: url(../../../assets/title-icon.svg);
+        display: block;
+        height: 1.5em;
+        background-repeat: no-repeat;
+        transform: translateX(73%) translateY(-109%);
+        z-index: -1;
+    }
+}
+
+section {
+    overflow: hidden;
+}
+
+@media (max-width: $breakpoint-md) {
+    .tac-subpagetitle {
+        margin-bottom: 3.5em;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+}

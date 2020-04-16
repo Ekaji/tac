@@ -1,5 +1,24 @@
 @import '../../../styles/abstracts/variables';
 
+.dropdown-menu {
+    background: transparent !important;
+    padding: 0 !important;
+}
+
+.dropdown-item {
+    font-size: 1.1em !important;
+    padding-top: 1em !important;
+    padding-bottom: 1em !important;
+    background-color: $main-white !important;
+    color: $light-blue;
+}
+
+.dropdown-item:hover,
+.dropdown-item:active {
+    background-color: $light-blue !important;
+    color: $main-white;
+}
+
 .navbar-light .navbar-nav .show>.nav-link,
 .navbar-light .navbar-nav .active>.nav-link,
 .navbar-light .navbar-nav .nav-link.show,
@@ -75,7 +94,7 @@
 
 .navbar-expand-lg .navbar-nav .nav-link {
     padding: .2rem !important;
-    margin: 0 2.8rem;
+    margin: 0 2rem;
     font-size: 1.2rem;
     color: $light-blue;
 }
