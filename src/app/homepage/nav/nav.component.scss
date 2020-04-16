@@ -88,7 +88,7 @@
     justify-content: flex-end;
 }
 
-@media (max-width: 991px) {
+@media (max-width: $breakpoint-lg) {
     .navbar-nav {
         opacity: 1;
         transform: translateX(0px);

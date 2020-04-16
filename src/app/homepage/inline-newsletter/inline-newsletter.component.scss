@@ -12,10 +12,15 @@
         p {
             color: $lightest-blue;
             max-width: 25em;
-            font-size: 1.2em;
-            line-height: 1.2;
+            font-size: 1.1em;
+            line-height: 1.5;
             margin-top: 1em;
         }
+    }
+
+    &__details-container {
+        display: flex;
+        justify-content: center;
     }
 
     form {
@@ -34,7 +39,7 @@
         input {
             border-radius: .3em;
             padding: 1rem 1.5rem;
-            font-size: 1.2em;
+            font-size: 1.1em;
             color: $light-blue;
             outline: 0;
             border: 0.2rem solid $light-grey;
@@ -55,4 +60,10 @@
 section {
     width: 100%;
     overflow-x: hidden;
+}
+
+@media (max-width: $breakpoint-md) {
+    .homepage-title {
+        margin-top: 2em;
+    }
 }

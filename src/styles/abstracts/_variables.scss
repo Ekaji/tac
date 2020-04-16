@@ -26,6 +26,8 @@ $lighter-blue: #17466C !default; //Lighter-Blue
 $lightest-blue: #477E8F !default; //Lightest-Blue
 $transparent-blue: #6E9AA8 !default; //Transperent-Blue
 
+$dark-blue: #0B3658 !default; //Dark-Blue
+
 ///Grey
 /// @type Color
 $main-grey: #E8F0F6 !default; //Grey
@@ -39,3 +41,12 @@ $main-white: #FFFFFF !default; //Grey
 ///Yellow
 /// @type Color
 $main-yellow: #FFC34E !default; //Yellow
+
+/// @type Break-Points
+$base-url: '../assets/' !default;
+$breakpoint-xxsm: 371px;
+$breakpoint-xsm: 455px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px
