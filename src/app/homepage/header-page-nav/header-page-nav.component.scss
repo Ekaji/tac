@@ -11,7 +11,7 @@ h1 {
     font-size: 3em;
     font-weight: 600;
     color: $light-blue;
-
+    position: relative;
 
     &:after {
         content: '';
@@ -21,6 +21,7 @@ h1 {
         background-repeat: no-repeat;
         transform: translateX(73%) translateY(-109%);
         z-index: -1;
+        position: relative;
     }
 }
 

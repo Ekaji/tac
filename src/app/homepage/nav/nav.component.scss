@@ -3,6 +3,7 @@
 .dropdown-menu {
     background: transparent !important;
     padding: 0 !important;
+    position: absolute;
 }
 
 .dropdown-item {
@@ -70,7 +71,7 @@
     border-radius: 1px;
     cursor: pointer;
     display: block;
-    margin: 5px;
+    margin: 4px;
     transition: all 0.2s ease-out;
     border-radius: 15px;
 }
@@ -94,7 +95,7 @@
 
 .navbar-expand-lg .navbar-nav .nav-link {
     padding: .2rem !important;
-    margin: 0 2rem;
+    margin: 0 1rem;
     font-size: 1.2rem;
     color: $light-blue;
 }
@@ -107,6 +108,37 @@
     justify-content: flex-end;
 }
 
+
+.navbar-collapse.collapse {
+
+    button {
+        margin: 0 auto;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+}
+
+.logo-img {
+    margin-left: 2em;
+}
+
+.navbar-collapse.collapse.show {
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+
+
+    a {
+        text-decoration: none;
+    }
+
+    button {
+        margin: 0 auto;
+        margin-left: initial;
+        margin-right: initial;
+    }
+}
+
 @media (max-width: $breakpoint-lg) {
     .navbar-nav {
         opacity: 1;
@@ -117,17 +149,18 @@
         align-items: center;
     }
 
-
-    .navbar-collapse.collapse.show {
-        background: #ffffff;
-
-
-        a {
-            text-decoration: none;
-        }
-
-        button {
-            margin: 0 auto;
-        }
+    .logo-img {
+        margin-left: initial;
+        height: 40px !important;
     }
+
+    nav {
+        padding-left: 1em !important;
+        padding-right: 1em !important;
+    }
+
+    .nav-item {
+        transition: .5s ease-in;
+    }
+
 }

@@ -1,0 +1,61 @@
+@import '../../../styles/abstracts/variables';
+
+form {
+    .form-group {
+        margin-bottom: 2em;
+    }
+
+    label {
+        color: $transparent-blue;
+        transform: translate(20px, 12px);
+        background: $main-blue;
+        padding: .3em;
+        border-radius: .2em;
+        color: $main-white;
+        font-size: .9em;
+    }
+
+    input,
+    textarea {
+        border-radius: .3em;
+        padding: 2rem 1rem;
+        font-size: 1.1em;
+        color: $light-blue;
+        outline: 0;
+        border: 0.2rem solid $light-grey;
+        width: 100%;
+
+        &:focus {
+            border-color: $lightest-blue;
+        }
+    }
+
+    button {
+        margin-top: .5em;
+
+    }
+}
+
+h2 {
+    margin-bottom: .5em;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    color: $light-blue;
+    margin-bottom: 1.5em;
+}
+
+a {
+    font-size: 2.5em;
+    padding-right: .5em;
+    align-self: center;
+    color: $lightest-blue;
+}
+
+@media (max-width: $breakpoint-md) {
+    form {
+        margin-top: 1em;
+    }
+}

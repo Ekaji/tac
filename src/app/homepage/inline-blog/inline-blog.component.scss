@@ -5,10 +5,8 @@
     justify-content: space-around;
     margin-top: 5em;
 
-
     &__members {
         max-width: 22em;
-        // background: $main-grey;
         display: flex;
         position: relative;
         padding: 2em 1em 2em 2em;
@@ -46,9 +44,8 @@
 
 .inline-support {
     background: $main-grey;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    margin-top: 8rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
 
     &__title {
         font-size: 1.1em;
@@ -64,7 +61,7 @@
 
     &__item {
         color: $lightest-blue;
-        margin-top: 2em;
+        margin-top: 5em;
 
         i {
             color: $lightest-blue;
@@ -90,17 +87,18 @@
     }
 }
 
+.drag-scroll {
+    width: 100%;
+    max-width: 62em;
+}
+
 .inline-blog {
-    margin-top: 10em;
 
     &__row {
         display: flex;
         flex-direction: row;
         width: 100%;
-        overflow-x: auto;
-        overflow-y: hidden;
-        scroll-snap-type: mandatory;
-        cursor: -moz-grab;
+
         max-width: 62em;
     }
 
@@ -109,8 +107,6 @@
         border-radius: .5em;
         max-width: 20em;
         margin-right: 1em;
-        flex-shrink: 0;
-        scroll-snap-align: center;
     }
 
     &__img-container {
@@ -118,27 +114,8 @@
         position: relative;
     }
 
-    &__img-overlay {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(#477E8F1C, #0625308F);
-        transition: .5s ease-in-out;
-
-
-        &:hover {
-            transition: .5s ease-in-out;
-
-            background: linear-gradient(#477e8f0c, #6e9ba849);
-        }
-    }
-
     &__img {
-        background: linear-gradient($lightest-blue, $transparent-blue);
-        background-position: 50% 50%;
-        background-size: cover;
         height: 15em;
-        transition: .5s ease-in-out;
         border-top-right-radius: .5em;
         border-top-left-radius: .5em;
 
@@ -149,8 +126,10 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        white-space: initial !important;
 
         h3 {
+            box-sizing: border-box;
             font-size: 1.1em;
             line-height: 1.5;
             margin-top: .5em;
@@ -170,6 +149,24 @@
 
     a {
         text-decoration: none;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;
+
+        i {
+            padding: .3em .5em;
+            border-radius: .2em;
+            background-color: $lighter-blue;
+            color: $main-white;
+            cursor: pointer;
+
+            &:first-child {
+                margin-right: 1em;
+            }
+        }
     }
 }
 

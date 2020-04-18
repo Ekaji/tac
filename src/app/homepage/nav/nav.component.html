@@ -29,10 +29,10 @@
 
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" [routerLink]="['about']">About Us</a>
-                    <a class="dropdown-item" [routerLink]="['']">Founder</a>
-                    <a class="dropdown-item" [routerLink]="['']">Our Team</a>
-                    <a class="dropdown-item" [routerLink]="['']">Partners & Supporters</a>
+                    <a class="dropdown-item" [routerLink]="['/about']">About Us</a>
+                    <a class="dropdown-item" [routerLink]="['/founder']">Founder</a>
+                    <a class="dropdown-item" [routerLink]="['/team']">Our Team</a>
+                    <a class="dropdown-item" [routerLink]="['/partners']">Partners & Supporters</a>
                 </div>
             </li>
 
@@ -56,14 +56,14 @@
 
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" [routerLink]="['']">Blog
+                    <a class="dropdown-item" [routerLink]="['/blog']">Blog
                         </a>
-                    <a class="dropdown-item" [routerLink]="['']">Gallery</a>
+                    <a class="dropdown-item" [routerLink]="['/gallery']">Gallery</a>
                 </div>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" [routerLink]="['']" routerLinkActive="active"
+                <a class="nav-link" [routerLink]="['/contact']" routerLinkActive="active"
                     [routerLinkActiveOptions]="{ exact: true }">Contact</a>
             </li>
         </ul>

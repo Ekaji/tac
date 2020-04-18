@@ -1,0 +1,21 @@
+.partners-container {
+    overflow: hidden;
+    &:not(:first-child) {
+        margin-top: 8em;
+    }
+
+    img {
+        height: 5em;
+
+            margin-right: 2em;
+    }
+
+    .drag-scroll {
+        height: 100%;
+        width: 100%;
+    }
+
+    h2 {
+        margin-bottom: 1em;
+    }
+}

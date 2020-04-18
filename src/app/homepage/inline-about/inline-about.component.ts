@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./inline-about.component.scss']
 })
 export class InlineAboutComponent implements OnInit {
-
+  title = 'About';
   constructor() { }
 
   ngOnInit(): void {

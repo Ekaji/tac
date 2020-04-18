@@ -1,0 +1,22 @@
+@import '../../../styles/abstracts/variables';
+
+.founder-info {
+    &__text {
+        font-size: 1.1em;
+        color: $light-blue;
+        line-height: 1.5;
+        margin: 0 auto;
+        max-width: 32em;
+
+        p {
+            &:not(:first-child) {
+                margin-top: 1.5em;
+            }
+        }
+    }
+
+    &__img {
+        display: flex;
+        justify-content: center;
+    }
+}

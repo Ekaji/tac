@@ -1,6 +1,6 @@
 <section>
-    <div class="top-section">
-        <div class="container-fluid">
+    <div>
+        <div class="container-fluid top-section">
             <h2 class="text-center homepage-title">Our <em>Advisory Board</em></h2>
             <div class="advisory-board">
                 <div class="advisory-board__members">
@@ -40,7 +40,7 @@
         </div>
 
 
-        <div class="inline-support">
+        <div class="inline-support top-section">
             <div class="container-fluid">
                 <div class="inline-support__title">
                     <h2 class="homepage-title text-center">Support Us</h2>
@@ -76,7 +76,7 @@
             </div>
         </div>
 
-        <div class="container-fluid">
+        <div class="container-fluid top-section">
             <div class="inline-blog">
                 <div class="row">
                     <div class="col-md-3">
@@ -84,68 +84,75 @@
                             <h2 class="homepage-title" style="max-width: 5em;"><em>News</em> and <em>Publications</em>
                             </h2>
                         </div>
+
+                        <div class="inline-blog__nav">
+                            <i (click)="moveLeft()" class="fas fa-angle-left"></i>
+                            <i (click)="moveRight()" class="fas fa-angle-right"></i>
+                        </div>
+
                     </div>
                     <div class="col-md-9">
                         <div class="inline-blog__row">
-                            <div class="inline-blog__item">
-                                <div class="inline-blog__img-container">
-                                    <div class="inline-blog__img-overlay"></div>
-                                    <img src="../../../assets/drone-video.jpg" class="inline-blog__img img-fluid" alt=""
-                                        srcset="">
-                                </div>
-                                <div class="inline-blog__blog-detail">
-                                    <a href="">
-                                        <h3>Lorem ipsum dorlo Lorem ipsum dorlo Lorem ipsum dorlo</h3>
-                                    </a>
-                                    <p>8 march 2020</p>
-                                </div>
-                            </div>
+                            <drag-scroll #inblog>
 
-                            <div class="inline-blog__item">
-                                <div class="inline-blog__img-container"></div>
-                                <div class="inline-blog__img-container">
-                                    <div class="inline-blog__img-overlay"></div>
-                                    <img src="../../../assets/drone-lab.jpg" class="inline-blog__img img-fluid" alt=""
-                                        srcset="">
+
+                                <div class="inline-blog__item" drag-scroll-item>
+                                    <div class="inline-blog__img-container">
+                                        <img src="../../../assets/drone-lab.jpg" class="inline-blog__img img-fluid"
+                                            alt="" srcset="">
+                                    </div>
+
+                                    <div class="inline-blog__blog-detail">
+                                        <a href="">
+                                            <h3>Lorem ipsum dorlo Lorem ipsum dorlo Lorem ipsum dorlo</h3>
+                                        </a>
+                                        <p>8 march 2020</p>
+                                    </div>
+
                                 </div>
 
-                                <div class="inline-blog__blog-detail">
-                                    <a href="">
-                                        <h3>Lorem ipsum dorlo Lorem ipsum dorlo Lorem ipsum dorlo</h3>
-                                    </a>
-                                    <p>8 march 2020</p>
-                                </div>
-
-                            </div>
-
-                            <div class="inline-blog__item">
-                                <div class="inline-blog__img-container"></div>
-                                <div class="inline-blog__img-container">
-                                    <div class="inline-blog__img-overlay"></div>
-                                    <img src="../../../assets/drone-video.jpg" class="inline-blog__img img-fluid" alt=""
-                                        srcset="">
-                                </div>
-                                <div class="inline-blog__blog-detail">
-                                    <a href="">
-                                        <h3>Lorem ipsum dorlo Lorem ipsum dorlo Lorem
-                                            ipsum dorlo</h3>
-                                    </a>
-                                    <p>8 march 2020</p>
-                                </div>
-                            </div>
-
-                            <div class="inline-blog__item">
-                                <div class="inline-blog__img-container">
-                                    <div class="inline-blog__img img-fluid">
+                                <div class="inline-blog__item" drag-scroll-item>
+                                    <div class="inline-blog__img-container">
+                                        <img src="../../../assets/drone-video.jpg" class="inline-blog__img img-fluid"
+                                            alt="" srcset="">
+                                    </div>
+                                    <div class="inline-blog__blog-detail">
+                                        <a href="">
+                                            <h3>Lorem ipsum dorlo Lorem ipsum dorlo Lorem
+                                                ipsum dorlo</h3>
+                                        </a>
+                                        <p>8 march 2020</p>
                                     </div>
                                 </div>
-                                <div class="inline-blog__blog-detail">
-                                    <a href="">
-                                        <h3>Lorem ipsum dorlo Lorem ipsum dorlo Lorem ipsum dorlo</h3>
-                                    </a>
-                                    <p>8 march 2020</p>
+
+                                <div class="inline-blog__item" drag-scroll-item>
+                                    <div class="inline-blog__img-container">
+                                        <img src="../../../assets/drone-video.jpg" class="inline-blog__img img-fluid"
+                                            alt="" srcset="">
+                                    </div>
+                                    <div class="inline-blog__blog-detail">
+                                        <a href="">
+                                            <h3>Lorem ipsum dorlo Lorem ipsum dorlo Lorem ipsum dorlo</h3>
+                                        </a>
+                                        <p>8 march 2020</p>
+                                    </div>
                                 </div>
-                            </div>
+
+                                <div class="inline-blog__item" drag-scroll-item>
+                                    <div class="inline-blog__img-container">
+                                        <img src="../../../assets/drone-video.jpg" class="inline-blog__img img-fluid"
+                                            alt="" srcset="">
+                                    </div>
+                                    <div class="inline-blog__blog-detail">
+                                        <a href="">
+                                            <h3>Lorem ipsum dorlo Lorem ipsum dorlo
+                                                Lorem ipsum dorlo</h3>
+                                        </a>
+                                        <p>8 march 2020</p>
+                                    </div>
+                                </div>
+                            </drag-scroll>
+
                         </div>
 
 

@@ -20,13 +20,16 @@
             max-width: 18em;
             color: $lighter-blue;
         }
+    }
 
+    &__detail-button-container {
         button {
-            &:first-child {
-                margin-left: 2em;
-                margin-right: 2em;
+            &:not(:last-child) {
+                margin-left: 1em;
+                margin-right: 1em;
             }
         }
+
     }
 }
 
@@ -98,5 +101,5 @@
 }
 
 .footer-justify {
-    justify-content: center;
+    justify-content: center !important;
 }
