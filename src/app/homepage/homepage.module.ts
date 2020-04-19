@@ -20,14 +20,17 @@ import { ContactComponent } from './contact/contact.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { BlogComponent } from './blog/blog.component';
 import { SupportComponent } from './support/support.component';
+import { HttpClientModule } from '@angular/common/http';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 @NgModule({
-  declarations: [HomepageComponent, NavComponent, HeaderComponent, LabsComponent, InlineAboutComponent, InlineNewsletterComponent, InlineBlogComponent, FooterComponent, AboutUsComponent, HeaderPageNavComponent, FounderComponent, OurTeamComponent, PartnersComponent, ContactComponent, GalleryComponent, BlogComponent, SupportComponent],
+  declarations: [HomepageComponent, NavComponent, HeaderComponent, LabsComponent, InlineAboutComponent, InlineNewsletterComponent, InlineBlogComponent, FooterComponent, AboutUsComponent, HeaderPageNavComponent, FounderComponent, OurTeamComponent, PartnersComponent, ContactComponent, GalleryComponent, BlogComponent, SupportComponent, PageNotFoundComponent],
   imports: [
     CommonModule, 
     HomepageRoutingModule,
     DragScrollModule,
+    HttpClientModule,
   ]
 })
 export class HomepageModule { }

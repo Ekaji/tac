@@ -8,6 +8,7 @@ import { OurTeamComponent } from './our-team/our-team.component';
 import { PartnersComponent } from './partners/partners.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { BlogComponent } from './blog/blog.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
   { path: 'about', component: AboutUsComponent },
@@ -18,6 +19,9 @@ const routes: Routes = [
   { path: 'gallery', component: GalleryComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'support', component: SupportComponent },
+  // otherwise redirect to home
+  { path: '404', component: PageNotFoundComponent },
+  { path: '**', redirectTo: '/404' }
 ];
 
 @NgModule({

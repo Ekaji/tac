@@ -1,0 +1,36 @@
+@import '../../../styles/abstracts/variables';
+
+.our-team {
+    &__item {
+        margin-top: 2em;
+
+        img {
+            width: 10em;
+            height: 10em;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-top: 2em;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.1em;
+            color: $light-blue;
+            margin-top: .5em;
+            text-transform: capitalize;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-lg) {
+    .our-team {
+        &__item {
+            margin-top: initial;
+            img {
+                width: 5em;
+                height: 5em;
+            }
+        }
+    }
+
+}

@@ -1,3 +1,6 @@
+
+@import '../../../styles/abstracts/variables';
+
 .partners-container {
     overflow: hidden;
     &:not(:first-child) {
@@ -18,4 +21,8 @@
     h2 {
         margin-bottom: 1em;
     }
+}
+
+.tac-img-grey {
+    background: $transparent-blue;
 }

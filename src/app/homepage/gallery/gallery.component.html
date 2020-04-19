@@ -3,7 +3,18 @@
     <tac-header-page-nav [title]="title"></tac-header-page-nav>
 </header>
 
-
+<section class="d-flex justify-content-center">
+    <div class="row text-center text-lg-left container-fluid" *ngIf="gallery">
+        <ng-container *ngFor="let photo of gallery">
+            <div class="col-lg-3 col-md-4 col-6">
+                <figure class="figure mt-4">
+                    <img class="img-fluid figure-img rounded" [src]="photo.image" [title]="photo.title" [alt]="photo.title">
+                    <figcaption class="figure-caption">{{ photo.title}}</figcaption>
+                </figure>
+            </div>
+        </ng-container>
+    </div>
+</section>
 
 <footer>
     <tac-footer></tac-footer>

@@ -3,7 +3,64 @@
     <tac-header-page-nav [title]="title"></tac-header-page-nav>
 </header>
 
+<main>
+    <div class="our-team container">
 
+        <!-- Advisory Board -->
+        <div>
+            <h2 class="homepage-title">Advisory Board</h2>
+
+            <div class="row our-team__item" *ngIf="teams">
+                <ng-container *ngFor="let advisory_board of teams">
+                    <ng-container *ngIf="advisory_board.team_level==='advisory board'">
+                        <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 text-center">
+                            <img [src]="advisory_board.image" [alt]="advisory_board.name" [title]="advisory_board.name">
+                            <p>{{ advisory_board.name }}</p>
+                        </div>
+
+                    </ng-container>
+                </ng-container>
+            </div>
+        </div>
+
+        <!-- Scientific committe -->
+        <div class="top-section">
+            <h2 class="homepage-title">Scientific Committe</h2>
+
+            <div class="row our-team__item" *ngIf="teams">
+                <ng-container *ngFor="let Scientific_committe of teams">
+                    <ng-container *ngIf="Scientific_committe.team_level==='Scientific Committe'">
+                        <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 text-center">
+                            <img [src]="Scientific_committe.image" [alt]="Scientific_committe.name"
+                                [title]="Scientific_committe.name">
+                            <p>{{ Scientific_committe.name }}</p>
+                        </div>
+
+                    </ng-container>
+                </ng-container>
+            </div>
+        </div>
+
+        <!-- Secretariat -->
+                <div class="top-section">
+                    <h2 class="homepage-title">Secretariat</h2>
+
+                    <div class="row our-team__item" *ngIf="teams">
+                        <ng-container *ngFor="let Secretariat of teams">
+                            <ng-container *ngIf="Secretariat.team_level==='Secretariat'">
+                                <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 text-center">
+                                    <img [src]="Secretariat.image" [alt]="Secretariat.name"
+                                        [title]="Secretariat.name">
+                                    <p>{{ Secretariat.name }}</p>
+                                </div>
+
+                            </ng-container>
+                        </ng-container>
+                    </div>
+                </div>
+    </div>
+
+</main>
 
 <footer>
     <tac-footer></tac-footer>

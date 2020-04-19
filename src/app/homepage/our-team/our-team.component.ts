@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TeamService } from '../shared/team.service';
 
 @Component({
   selector: 'tac-our-team',
@@ -7,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OurTeamComponent implements OnInit {
   title = 'Our Team';
+  teams = [];
 
-  constructor() { }
+  constructor(private teamService: TeamService) { }
 
   ngOnInit(): void {
+    this.teamService.getTeam().subscribe((data: any[]) => {
+      this.teams = data;
+    })
   }
 
 }
