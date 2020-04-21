@@ -1,3 +1,4 @@
+import { CoreModule } from './core/core.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -21,6 +22,9 @@ import { HomepageModule } from './homepage/homepage.module';
 
     //Feature Modules
     HomepageModule,
+
+    //Core Modules
+    CoreModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
