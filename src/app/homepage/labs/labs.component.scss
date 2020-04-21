@@ -17,11 +17,16 @@
         margin: 0 auto;
         line-height: 1.5;
         color: $lightest-blue;
+        min-height: 5em;
     }
 
     button {
         margin-top: 1.5em;
         padding: 0.5rem 3rem;
+    }
+
+    img {
+        min-height: 10em;
     }
 }
 
