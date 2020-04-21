@@ -1,7 +1,7 @@
-import { TeamService } from './../shared/team.service';
+import { TeamService } from '../shared/service/team.service';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { DragScrollComponent } from 'ngx-drag-scroll';
-import { Iteam } from '../shared/team.model';
+import { Iteam } from '../shared/model/team.model';
 
 @Component({
   selector: 'tac-inline-blog',

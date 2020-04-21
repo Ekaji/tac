@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { TeamService } from '../shared/team.service';
-import { Iteam } from '../shared/team.model';
+import { TeamService } from '../shared/service/team.service';
+import { Iteam } from '../shared/model/team.model';
 
 @Component({
   selector: 'tac-our-team',

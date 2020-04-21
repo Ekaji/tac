@@ -1,6 +1,6 @@
-import { GalleryService } from './../shared/gallery.service';
+import { GalleryService } from '../shared/service/gallery.service';
 import { Component, OnInit } from '@angular/core';
-import { IGallery } from '../shared/gallery.model';
+import { IGallery } from '../shared/model/gallery.model';
 
 @Component({
   selector: 'tac-gallery',

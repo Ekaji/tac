@@ -1,4 +1,4 @@
-import { Iteam } from './team.model';
+import { Iteam } from '../model/team.model';
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { HttpClient } from '@angular/common/http';

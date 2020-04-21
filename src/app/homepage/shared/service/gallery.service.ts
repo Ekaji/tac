@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { IGallery } from './gallery.model';
+import { IGallery } from '../model/gallery.model';
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 
