@@ -1,5 +1,7 @@
+import { TeamService } from './../shared/team.service';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { DragScrollComponent } from 'ngx-drag-scroll';
+import { Iteam } from '../shared/team.model';
 
 @Component({
   selector: 'tac-inline-blog',
@@ -8,6 +10,7 @@ import { DragScrollComponent } from 'ngx-drag-scroll';
 })
 export class InlineBlogComponent implements OnInit {
   @ViewChild('inblog', { read: DragScrollComponent }) ds: DragScrollComponent;
+  team = [];
 
   moveLeft() {
     this.ds.moveLeft();
@@ -16,9 +19,12 @@ export class InlineBlogComponent implements OnInit {
   moveRight() {
     this.ds.moveRight();
   }
-  constructor() { }
+  constructor(private teamService: TeamService) { }
 
   ngOnInit(): void {
+    this.teamService.getTeam().subscribe((data: Iteam[]) => {
+      this.team = data
+    })
   }
 
 }

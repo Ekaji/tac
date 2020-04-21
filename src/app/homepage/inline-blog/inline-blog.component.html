@@ -2,40 +2,22 @@
     <div>
         <div class="container-fluid top-section">
             <h2 class="text-center homepage-title">Our <em>Advisory Board</em></h2>
-            <div class="advisory-board">
-                <div class="advisory-board__members">
-                    <img src="https://res.cloudinary.com/silva/image/upload/v1581604140/ingram.png"
-                        class="advisory-board__img" alt="" srcset="">
-                    <div>
-                        <h3>P.J. Ingram MBE BSc MA GCGI</h3>
-                        <p>
-                            Managing Editor, Grey Hare Media Limited, London, United Kingdom.
-                        </p>
-                    </div>
-                </div>
-                <div class="advisory-board__members">
-                    <img src="https://res.cloudinary.com/silva/image/upload/v1581604140/aderanti.png"
-                        class="advisory-board__img" alt="" srcset="">
-
-                    <div>
-                        <h3>AIG C.K. Aderanti</h3>
-                        <p>
-                            Assistant Inspector General of Police (Rtd), President/CEO Daniel Security Systems Limited,
-                            Nigeria
-                        </p>
-                    </div>
-                </div>
-                <div class="advisory-board__members">
-                    <img src="https://res.cloudinary.com/silva/image/upload/v1581604140/Ibrahim-Gambari.png"
-                        class="advisory-board__img" alt="" srcset="">
-
-                    <div>
-                        <h3>Prof. Ibrahim Agboola Gambari</h3>
-                        <p>
-                            Founder/Chairman of Savannah Center, AU Chairperson - APRM Panel of Eminent Person.
-                        </p>
-                    </div>
-                </div>
+            <div class="advisory-board" *ngIf="team">
+                <ng-container *ngFor="let advisory_board of team">
+                    <ng-container *ngIf="advisory_board.team_level==='advisory board'">
+                        <div class="advisory-board__members">
+                            <img [src]="advisory_board.image" [alt]="advisory_board.name"
+                                [title]="advisory_board.name"
+                                class="advisory-board__img">
+                            <div>
+                                <h3>{{ advisory_board.name }}</h3>
+                                <p>
+                                    {{ advisory_board.title }}
+                                </p>
+                            </div>
+                        </div>
+                    </ng-container>
+                </ng-container>
             </div>
         </div>
 
