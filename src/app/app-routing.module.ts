@@ -9,7 +9,8 @@ const routes: Routes = [
     path: '',
     redirectTo: '',
     pathMatch: 'full'
-  }
+  },
+  { path: 'drone-virtual-lab', loadChildren: () => import('./drone-virtual-lab/drone-virtual-lab.module').then(m => m.DroneVirtualLabModule) }
 
 ];
 

@@ -1,3 +1,4 @@
+import { DroneVirtualLabModule } from './drone-virtual-lab/drone-virtual-lab.module';
 import { CoreModule } from './core/core.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -22,6 +23,7 @@ import { HomepageModule } from './homepage/homepage.module';
 
     //Feature Modules
     HomepageModule,
+    DroneVirtualLabModule,
 
     //Core Modules
     CoreModule,

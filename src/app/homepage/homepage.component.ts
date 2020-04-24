@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { Meta } from '@angular/platform-browser';
 
-declare let gtag: any;
+declare let gtag;
 @Component({
   selector: 'tac-homepage',
   templateUrl: './homepage.component.html',
