@@ -15,4 +15,8 @@ export class BlogService {
         return this.http.get<any>(`${this.baseUrl}/api/post/`)
     }
 
+    getPost(slug:String) {
+        return this.http.get<any>(`${this.baseUrl}/api/post/${slug}`)
+    }
+
 }

@@ -23,7 +23,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { RouterModule } from '@angular/router';
 import { BlogDetailComponent } from './blog-detail/blog-detail.component';
-
+import { MarkdownModule } from 'ngx-markdown';
 
 @NgModule({
   declarations: [HomepageComponent, HeaderComponent, LabsComponent, InlineAboutComponent, InlineNewsletterComponent, InlineBlogComponent, AboutUsComponent, HeaderPageNavComponent, FounderComponent, OurTeamComponent, PartnersComponent, ContactComponent, GalleryComponent, BlogComponent, SupportComponent, PageNotFoundComponent, BlogDetailComponent],
@@ -33,7 +33,8 @@ import { BlogDetailComponent } from './blog-detail/blog-detail.component';
     DragScrollModule,
     HttpClientModule,
     SharedModule,
-    RouterModule
+    RouterModule,
+    MarkdownModule.forChild(),
   ]
 })
 export class HomepageModule { }

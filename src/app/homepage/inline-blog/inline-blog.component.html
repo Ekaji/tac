@@ -83,7 +83,7 @@
                                                     srcset="">
                                             </div>
                                             <div class="inline-blog__blog-detail">
-                                                <a href="">
+                                                <a [routerLink]="['/posts', post.slug]" routerLinkActive="router-link-active" >
                                                     <h3>{{ post.title | slice:0:70 }}...</h3>
                                                 </a>
                                                 <p>{{ post.publish | date  }}</p>

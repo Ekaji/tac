@@ -1,3 +1,4 @@
+import { BlogDetailComponent } from './blog-detail/blog-detail.component';
 import { SupportComponent } from './support/support.component';
 import { ContactComponent } from './contact/contact.component';
 import { FounderComponent } from './founder/founder.component';
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'partners', component: PartnersComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'gallery', component: GalleryComponent },
+  { path: 'posts/:slug', component: BlogDetailComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'support', component: SupportComponent },
   // otherwise redirect to home

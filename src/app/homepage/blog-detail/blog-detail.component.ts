@@ -1,4 +1,6 @@
+import { BlogService } from './../shared/service/blog.service';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'tac-blog-detail',
@@ -6,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./blog-detail.component.scss']
 })
 export class BlogDetailComponent implements OnInit {
-
-  constructor() { }
+  post;
+  constructor(private blogService: BlogService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.blogService.getPost(this.route.snapshot.params['slug']).subscribe((data) => {
+      this.post = data
+    })
   }
 
 }

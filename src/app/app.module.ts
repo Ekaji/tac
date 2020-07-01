@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { DroneVirtualLabModule } from './drone-virtual-lab/drone-virtual-lab.module';
 import { CoreModule } from './core/core.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -11,7 +12,7 @@ import { AppComponent } from './app.component';
 
 //Feature Modules
 import { HomepageModule } from './homepage/homepage.module';
-
+import { MarkdownModule } from 'ngx-markdown';
 @NgModule({
   declarations: [
     AppComponent
@@ -21,12 +22,16 @@ import { HomepageModule } from './homepage/homepage.module';
     AppRoutingModule,
     // NgbModule,
 
+    HttpClientModule,
+
     //Feature Modules
     HomepageModule,
     DroneVirtualLabModule,
 
     //Core Modules
     CoreModule,
+
+    MarkdownModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
