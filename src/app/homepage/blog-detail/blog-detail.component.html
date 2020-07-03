@@ -2,21 +2,24 @@
     <tac-nav></tac-nav>
 </header>
 
-<div class="container">
-        <div class="inline-blog__img-container">
-            <img src="{{post.image}}" class="inline-blog__img img-fluid" alt="" srcset="">
+    <div class="hero-container" [style.background-image]="'url(' + post.image + ')'">
+        <div class="hero-overlay">
+
         </div>
 
-        <div>
+        <div class="hero-text">
+            <div class="hero-text__container">
+                <h3>{{ post.title }}</h3>
+                <p>{{ post.publish | date  }}</p>
+            </div>               
+        </div>
+ 
+    </div>
 
-            <markdown class="variable-binding" [data]="post.content" ></markdown>
-            
-        </div>
-        <div class="inline-blog__blog-detail">
-            <h3>{{ post.title | slice:0:70 }}...</h3>
-            <p>{{ post.publish | date  }}</p>
-        </div>
-</div>
+
+    <div class="container">
+        <markdown class="variable-binding" [data]="post.content" ></markdown>
+    </div>
 
 <footer>
     <tac-footer></tac-footer>

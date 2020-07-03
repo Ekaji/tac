@@ -150,7 +150,71 @@ export class TeamService {
     "title": "Senior UAV Pilot/ Trainer",
     "team_level": "Secretariat",
     "bio": ""
-  }
+  },
+  {
+    "id": 19,
+    "name": "Professor B.K. Alese",
+    "image": "https://res.cloudinary.com/silva/image/upload/v1593737134/Professor-B.K.-Alese.jpg",
+    "title": "",
+    "team_level": "security",
+    "bio": ""
+  },
+  {
+    "id": 20,
+    "name": "Ese Egerega",
+    "image": "https://res.cloudinary.com/silva/image/upload/v1593737134/Ese-Egerega.jpg",
+    "title": "",
+    "team_level": "security",
+    "bio": ""
+  },
+  {
+    "id": 21,
+    "name": "Raji Abdulgafar",
+    "image": "https://res.cloudinary.com/silva/image/upload/v1593737134/Raji-Abdulgafar.jpg",
+    "title": "",
+    "team_level": "security",
+    "bio": ""
+  },
+  {
+    "id": 22,
+    "name": "Shehu Awwal",
+    "image": "https://res.cloudinary.com/silva/image/upload/v1593737136/Shehu-Awwal.jpg",
+    "title": "",
+    "team_level": "security",
+    "bio": ""
+  },
+  {
+    "id": 23,
+    "name": "Felix Larbi Aryeh",
+    "image": "https://res.cloudinary.com/silva/image/upload/v1593737133/FELIX-LARBI-ARYEH.jpg",
+    "title": "Research Fellow / Lecturer & Webmaster",
+    "team_level": "security",
+    "bio": "(MSc, BSc, MIASTED, MGARNET, MUTAG)Computer Science and Engineering Department & ICTUUniversity of Mines and Technology"
+  },
+  {
+    "id": 24,
+    "name": "Tosin Akinsowon",
+    "image": "https://res.cloudinary.com/silva/image/upload/v1593737133/Tosin-Akinsowon.jpg",
+    "title": "",
+    "team_level": "security",
+    "bio": ""
+  },
+  {
+    "id": 25,
+    "name": "Mr. Kelvin Lungu ",
+    "image": "https://res.cloudinary.com/silva/image/upload/v1593738275/Mr.-Kelvin-Lungu.jpg",
+    "title": "Co-Ordinator – Zambia Flying Labs, Lecturer - University of Zambia",
+    "team_level": "Scientific Committe",
+    "bio": ""
+  },
+  {
+    "id": 25,
+    "name": "Mr. Adewale Adegoke",
+    "image": "https://res.cloudinary.com/silva/image/upload/v1593738275/Mr.-Adewale-Adegoke.jpg",
+    "title": "CEO Digital Orbital Solutions and Cordinator, Nigeria Flying Labs",
+    "team_level": "Scientific Committe",
+    "bio": ""
+  },
   ]
 
   constructor(private http: HttpClient) { }

@@ -1,0 +1,49 @@
+@import '../../../styles/abstracts/variables';
+
+.hero-container {
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 30em;
+    position: relative;
+}
+
+.hero-overlay {
+    background: linear-gradient(180deg, rgb(2, 0, 36) 0%, rgb(251, 251, 251) 0%, rgba(156, 196, 204, 0.5) 48%, rgb(255, 255, 255) 95%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+}
+
+.hero-text {
+    position: absolute;
+    z-index: 20;
+    top: 13em;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    &__container {
+        max-width: 37em;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+        line-height: 1.35;
+        margin-bottom: 1em;
+        text-transform: capitalize;
+        -moz-user-select: none;
+        user-select: none;
+        color: $main-blue;
+    }
+
+    p {
+      color: $lightest-blue;
+    }
+}
+
+

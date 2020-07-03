@@ -493,3 +493,27 @@ em {
             content: '';
             }
 }
+
+.variable-binding {
+    p {
+        margin-bottom: 1.3rem !important;
+        line-height: 1.5em !important;
+        font-size: 1.12em !important;
+    }
+
+    em, blockquote {
+        font-style: italic;
+        border-left: .3em solid goldenrod;
+        padding-left: .5em;
+
+        &::before {
+            background-color: initial;
+        }
+    }
+
+    b, strong {
+        font-weight: 800;
+    }
+
+
+}

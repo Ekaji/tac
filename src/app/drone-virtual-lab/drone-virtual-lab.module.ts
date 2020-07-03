@@ -8,6 +8,7 @@ import { DroneVirtualLabRoutingModule } from './drone-virtual-lab-routing.module
 import { DroneVirtualLabComponent } from './drone-virtual-lab.component';
 import { HeaderComponent } from './header/header.component';
 import { InlineStakeholdersComponent } from './inline-stakeholders/inline-stakeholders.component';
+import { MarkdownModule } from 'ngx-markdown';
 
 @NgModule({
   declarations: [DroneVirtualLabComponent, HeaderComponent, InlineStakeholdersComponent, SubjectMattersComponent, TimelineComponent],
@@ -15,6 +16,7 @@ import { InlineStakeholdersComponent } from './inline-stakeholders/inline-stakeh
     CommonModule,
     DroneVirtualLabRoutingModule,
     SharedModule,
+    MarkdownModule.forChild(),
   ]
 })
 export class DroneVirtualLabModule { }

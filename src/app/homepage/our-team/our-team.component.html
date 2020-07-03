@@ -23,13 +23,31 @@
             </div>
         </div>
 
-        <!-- Scientific committe -->
+        <!-- Drone Scientific committe -->
         <div class="top-section">
-            <h2 class="homepage-title">Scientific Committe</h2>
+            <h2 class="homepage-title">Counter Drone Scientific Committe</h2>
 
             <div class="row our-team__item" *ngIf="teams">
                 <ng-container *ngFor="let Scientific_committe of teams">
                     <ng-container *ngIf="Scientific_committe.team_level==='Scientific Committe'">
+                        <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 text-center">
+                            <img [src]="Scientific_committe.image" [alt]="Scientific_committe.name"
+                                [title]="Scientific_committe.name">
+                            <p>{{ Scientific_committe.name }}</p>
+                        </div>
+
+                    </ng-container>
+                </ng-container>
+            </div>
+        </div>
+
+        <!-- Cyber Scientific committe -->
+        <div class="top-section">
+            <h2 class="homepage-title">TAC Cybercrime Expert Group</h2>
+
+            <div class="row our-team__item" *ngIf="teams">
+                <ng-container *ngFor="let Scientific_committe of teams">
+                    <ng-container *ngIf="Scientific_committe.team_level==='security'">
                         <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 text-center">
                             <img [src]="Scientific_committe.image" [alt]="Scientific_committe.name"
                                 [title]="Scientific_committe.name">
