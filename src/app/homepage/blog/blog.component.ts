@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BlogService } from '../shared/service/blog.service';
 
 @Component({
   selector: 'tac-blog',
@@ -7,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogComponent implements OnInit {
   title = 'Blog';
+  posts;
 
-  constructor() { }
+  constructor(private blogService: BlogService) { }
 
   ngOnInit(): void {
+    this.blogService.getAllPost().subscribe((data) => {
+      this.posts = data;
+      console.log(data)
+    })
   }
 
 }

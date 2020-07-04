@@ -2,24 +2,23 @@
     <tac-nav></tac-nav>
 </header>
 
-    <div class="hero-container" [style.background-image]="'url(' + post.image + ')'">
-        <div class="hero-overlay">
-
-        </div>
+<main>
+    <div class="hero-container">
 
         <div class="hero-text">
             <div class="hero-text__container">
                 <h3>{{ post.title }}</h3>
-                <p>{{ post.publish | date  }}</p>
-            </div>               
+                <p><i class="fa fa-calendar-o"></i> {{ post.publish | date  }}</p>
+            </div>
         </div>
- 
+
     </div>
 
 
-    <div class="container">
-        <markdown class="variable-binding" [data]="post.content" ></markdown>
+    <div class="container" style="max-width: 54em;">
+        <markdown class="variable-binding" [data]="post.content"></markdown>
     </div>
+</main>
 
 <footer>
     <tac-footer></tac-footer>

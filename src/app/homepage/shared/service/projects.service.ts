@@ -53,8 +53,64 @@ export class ProjectService {
         "id": 7,
         "title": "Drone UTM",
         "image": "https://res.cloudinary.com/silva/image/upload/v1593739523/drone-utm.jpg",
-        "description": "– The main of the challenge will be to promote public confidence inadvance air mobility systems and help organise the domain– The other goals can be: to accelerate technology certifications andapprovals, develop flight procedure guidelines, Evaluatecommunication, navigation and surveillance optionsDemonstrate an airspace system architecture construct in Virtual LabWebsite schema for drone and counter drone platform.",
+        "description": "–The main of the challenge will be to promote public confidence inadvance air mobility systems and help organise the domain –The other goals can be: to accelerate technology certifications andapprovals, develop flight procedure guidelines, Evaluatecommunication, navigation and surveillance optionsDemonstrate an airspace system architecture construct in Virtual LabWebsite schema for drone and counter drone platform.",
         "project_type": "drone"
+    },
+    {
+        "id": 8,
+        "title": "DeepWeb Crawlers",
+        "image": "https://res.cloudinary.com/silva/image/upload/v1593743414/web-crawler.jpg",
+        "description": "",
+        "project_type": "security"
+    },
+    {
+        "id": 9,
+        "title": "Honeypot Project",
+        "image": "https://res.cloudinary.com/silva/image/upload/v1593743415/Honeypot-Project.jpg",
+        "description": "",
+        "project_type": "security"
+    },
+    {
+        "id": 10,
+        "title": "Cyber Peace Keepers",
+        "image": "https://res.cloudinary.com/silva/image/upload/v1593743415/Cyber-Peace-Keepers.jpg",
+        "description": "",
+        "project_type": "security"
+    },
+    {
+        "id": 11,
+        "title": "Operations against cyber criminals",
+        "image": "https://res.cloudinary.com/silva/image/upload/v1593743416/Operations-against-cyber-criminals.jpg",
+        "description": "",
+        "project_type": "security"
+    },
+    {
+        "id": 12,
+        "title": "Cyber Forensic",
+        "image": "https://res.cloudinary.com/silva/image/upload/v1593743417/cyber-forensic.jpg",
+        "description": "",
+        "project_type": "security"
+    },
+    {
+        "id": 13,
+        "title": "Cyber Strategies",
+        "image": "https://res.cloudinary.com/silva/image/upload/v1593743418/Cyber-Strategies.jpg",
+        "description": "",
+        "project_type": "security"
+    },
+    {
+        "id": 14,
+        "title": "Cyber Diplomacy",
+        "image": "https://res.cloudinary.com/silva/image/upload/v1593743419/cyber-Diplomacy.jpg",
+        "description": "",
+        "project_type": "security"
+    },
+    {
+        "id": 15,
+        "title": "Cyber Hygiene",
+        "image": "https://res.cloudinary.com/silva/image/upload/v1593743421/Cyber-Hygiene.jpg",
+        "description": "",
+        "project_type": "security"
     },
     ]
 

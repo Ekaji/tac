@@ -3,6 +3,34 @@
     <tac-header-page-nav [title]="title"></tac-header-page-nav>
 </header>
 
+<main>
+    <div class="container">
+        <div class="row">
+            <ng-container *ngIf="posts">
+                <ng-container *ngFor="let post of posts">
+                    <div class="col-md-4 mt-3">
+                        <div class="inline-blog__item">
+                            <div class="inline-blog__img-container">
+                                <img src="{{post.image}}" class="inline-blog__img img-fluid" alt=""
+                                    srcset="">
+                            </div>
+                            <div class="inline-blog__blog-detail">
+                                <a [routerLink]="['/posts', post.slug]"
+                                    routerLinkActive="router-link-active">
+                                    <h3>{{ post.title | slice:0:70 }}...</h3>
+                                </a>
+                                <p>{{ post.publish | date  }}</p>
+                            </div>
+                        </div>                        
+                    </div>
+
+                </ng-container>
+            </ng-container>
+        </div>
+
+    </div>
+
+</main>
 
 <footer>
     <tac-footer></tac-footer>

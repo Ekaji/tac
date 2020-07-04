@@ -1,7 +1,6 @@
-import { ProjectService } from './../../homepage/shared/service/projects.service';
 import { Component, OnInit } from '@angular/core';
+import { ProjectService } from 'src/app/homepage/shared/service/projects.service';
 import { IProject } from 'src/app/homepage/shared/model/project.model';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'tac-subject-matters',
@@ -10,21 +9,12 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class SubjectMattersComponent implements OnInit {
   projects;
-  constructor(private projectService: ProjectService, private modalService: NgbModal) { }
+
+  constructor(private projectService: ProjectService) { }
 
   ngOnInit(): void {
     this.projectService.getProject().subscribe((data: IProject[]) => {
       this.projects = data;
-    })
-  }
-
-  open(content) {
-    this.modalService.open(content, {
-      windowClass: 'modal-fade',
-      ariaLabelledBy: 'subject-matters-expert',
-      centered: true,
-      keyboard: true,
-      size: 'lg'
     })
   }
 

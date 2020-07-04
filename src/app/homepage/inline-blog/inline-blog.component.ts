@@ -30,7 +30,6 @@ export class InlineBlogComponent implements OnInit {
 
     this.blogService.getAllPost().subscribe((data) => {
       this.posts = data;
-      console.log(data)
     })
   }
 

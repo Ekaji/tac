@@ -1,0 +1,24 @@
+<section class="top-section background-main-grey ">
+    <div class="container-fluid pt-5 pb-5">
+        <div>
+            <h2 class="text-center homepage-title"><em>Projects</em></h2>
+        </div>
+
+        <div class="row text-center align-items-end" *ngIf="projects">
+            <ng-container *ngFor="let project of projects">
+                <ng-container *ngIf="project.project_type==='security'">
+                    <div class="col-md-3">
+                        <div class="mt-5">
+                            <img class="img-fluid cursor-pointer shadow" [src]="project.image" [alt]="project.title"
+                                [title]="project.title"
+                                data-toggle="modal" data-target=".bd-example-modal-lg">
+                            <p class="mt-3 cursor-pointer color-light-blue" data-toggle="modal"
+                                data-target=".bd-example-modal-lg">
+                                {{project.title}}</p>
+                        </div>
+                    </div>
+                </ng-container>
+            </ng-container>
+        </div>
+    </div>
+</section>

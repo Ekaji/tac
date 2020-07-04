@@ -1,0 +1,79 @@
+@import '../../../styles/abstracts/variables';
+
+.inline-blog {
+
+    &__row {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+        max-width: 62em;
+    }
+
+    &__item {
+        border: 1px solid #8080804a;
+        border-radius: .5em;
+        max-width: 20em;
+        margin-right: 1em;
+    }
+
+    &__img-container {
+        overflow: hidden;
+        position: relative;
+    }
+
+    &__img {
+        height: 15em;
+        border-top-right-radius: .5em;
+        border-top-left-radius: .5em;
+
+    }
+
+    &__blog-detail {
+        min-height: 8em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        white-space: initial !important;
+
+        h3 {
+            box-sizing: border-box;
+            font-size: 1.1em;
+            line-height: 1.5;
+            margin-top: .5em;
+            color: $lighter-blue;
+            padding: .5em;
+            text-transform: capitalize;
+        }
+
+        p {
+            color: $transparent-blue;
+            text-transform: lowercase;
+            font-size: .7em;
+            padding: .7em;
+        }
+    }
+
+
+    a {
+        text-decoration: none;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;
+
+        i {
+            padding: .3em .5em;
+            border-radius: .2em;
+            background-color: $lighter-blue;
+            color: $main-white;
+            cursor: pointer;
+
+            &:first-child {
+                margin-right: 1em;
+            }
+        }
+    }
+}
