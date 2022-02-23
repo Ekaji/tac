@@ -3,7 +3,7 @@ import { DroneVirtualLabModule } from './drone-virtual-lab/drone-virtual-lab.mod
 import { CoreModule } from './core/core.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { APP_BASE_HREF, LocationStrategy, HashLocationStrategy} from '@angular/common'
+// import { APP_BASE_HREF, LocationStrategy, HashLocationStrategy} from '@angular/common'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -34,14 +34,7 @@ import { MarkdownModule } from 'ngx-markdown';
 
     MarkdownModule.forRoot(),
   ],
-  providers: [
-    { 
-      provide: APP_BASE_HREF, useValue: '/'
-    },
-    { 
-      provide: LocationStrategy, useClass: HashLocationStrategy
-    },
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
