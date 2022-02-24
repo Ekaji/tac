@@ -4,12 +4,12 @@ import { HomepageComponent } from './homepage/homepage.component';
 
 
 const routes: Routes = [
-  { path: '', component: HomepageComponent },
   {
     path: '',
-    redirectTo: '',
+    redirectTo: 'home',
     pathMatch: 'full'
   },
+  { path: '', component: HomepageComponent },
   { path: 'drone-virtual-lab', loadChildren: () => import('./drone-virtual-lab/drone-virtual-lab.module').then(m => m.DroneVirtualLabModule) },
   { path: 'security-lab', loadChildren: () => import('./security-lab/security-lab.module').then(m => m.SecurityLabModule) }
 
